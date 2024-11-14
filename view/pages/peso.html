@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Peso</title>
+    <link rel="stylesheet" href="./../css/tds_ps.css">
+    <script src="./../../controller/peso.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="colher.html">Colher para ml/g</a></li>
+                <li><a href="temperatura.html">Temperatura</a></li>
+                <li><a href="comprimento.html">Comprimento</a></li>
+                <li><a href="peso.html">Peso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="peso-conversao">
+        <h2>Conversão de Peso</h2>
+        <p>Insira o valor e escolha as unidades de conversão:</p>
+
+        <!-- Entrada de valor -->
+        <input type="number" id="inputValor" placeholder="Digite o valor">
+
+        <!-- Seleção de unidade de entrada -->
+        <label for="unidadeEntrada">De:</label>
+        <select id="unidadeEntrada">
+            <option value="grama">Gramas (g)</option>
+            <option value="quilograma">Quilogramas (kg)</option>
+            <option value="tonelada">Toneladas (t)</option>
+            <option value="libra">Libras (lb)</option>
+            <option value="onca">Onças (oz)</option>
+        </select>
+
+        <!-- Seleção de unidade de saída -->
+        <label for="unidadeSaida">Para:</label>
+        <select id="unidadeSaida">
+            <option value="grama">Gramas (g)</option>
+            <option value="quilograma">Quilogramas (kg)</option>
+            <option value="tonelada">Toneladas (t)</option>
+            <option value="libra">Libras (lb)</option>
+            <option value="onca">Onças (oz)</option>
+        </select>
+
+        <button onclick="converterPeso()">Converter</button>
+
+        <div id="resultado"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Conversor de Medidas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+@import url(./index.css);
+
+/* Estilo da seção de conversão */
+section {
+    background-color: #f4f4f4;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #456481;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #456481;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #456481;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8ea4c4;
+}
+
+#resultado {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}

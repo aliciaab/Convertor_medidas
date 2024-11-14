@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Comprimento</title>
+    <link rel="stylesheet" href="./../css/tds_ps.css">
+    <script src="./../../controller/comprimento.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="colher.html">Colher para ml/g</a></li>
+                <li><a href="temperatura.html">Temperatura</a></li>
+                <li><a href="comprimento.html">Comprimento</a></li>
+                <li><a href="peso.html">Peso</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="comprimento-conversao">
+        <h2>Conversão de Comprimento</h2>
+        <p>Insira o valor e escolha as unidades de conversão:</p>
+
+        <!-- Entrada de valor -->
+        <input type="number" id="inputValor" placeholder="Digite o valor">
+
+        <!-- Seleção de unidade de entrada -->
+        <label for="unidadeEntrada">De:</label>
+        <select id="unidadeEntrada">
+            <option value="metros">Metros (m)</option>
+            <option value="centimetros">Centímetros (cm)</option>
+            <option value="quilometros">Quilômetros (km)</option>
+            <option value="milimetros">Milímetros (mm)</option>
+            <option value="polegadas">Polegadas (in)</option>
+            <option value="pes">Pés (ft)</option>
+        </select>
+
+        <!-- Seleção de unidade de saída -->
+        <label for="unidadeSaida">Para:</label>
+        <select id="unidadeSaida">
+            <option value="metros">Metros (m)</option>
+            <option value="centimetros">Centímetros (cm)</option>
+            <option value="quilometros">Quilômetros (km)</option>
+            <option value="milimetros">Milímetros (mm)</option>
+            <option value="polegadas">Polegadas (in)</option>
+            <option value="pes">Pés (ft)</option>
+        </select>
+
+        <button onclick="converterComprimento()">Converter</button>
+
+        <div id="resultado"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Conversor de Medidas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

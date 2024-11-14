@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Estilo geral do body */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da tela */
+}
+
+/* Estilo do header */
+header {
+  background-color: #456481;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #8ea4c4;
+  color: #333;
+}
+
+/* Estilo do banner */
+#banner {
+  position: relative;
+  height: 50vh; /* Ajuste a altura da área do banner */
+  background-color: #8ea4c4;
+  overflow: hidden; /* Oculta partes da imagem que saem do container */
+}
+
+#banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* A imagem irá cobrir o container sem distorcer */
+  object-position: center; /* A imagem será centralizada */
+}
+
+/* Estilo do conteúdo do banner (texto abaixo da imagem) */
+#banner-content {
+  text-align: center;
+  margin-top: 20px; /* Distância da imagem para o texto */
+  padding: 20px;
+}
+
+#banner h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#banner p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+  color: #333; /* Certifique-se de que o texto é visível */
+}
+
+/* Estilo do footer */
+footer {
+  background-color: #456481;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto; /* Faz com que o footer se empurre para o fim da página */
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
